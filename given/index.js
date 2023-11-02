@@ -18,6 +18,11 @@
  */
 
 var classroomSupplies = ["pen", "paper", "desk", "computer"];
+classroomSupplies.push("pen");
+classroomSupplies.push("paper");
+classroomSupplies.push("desk");
+classroomSupplies.push("computer");
+
 
 console.log(classroomSupplies); // 'pan', 'paper', 'desk', 'computer'
 
@@ -41,7 +46,10 @@ console.log(classroomSupplies); // 'computer', 'desk', 'paper', 'pen'
 
 
 var travelPlaces = [];
-travelPlaces = ["Toronto", "New York", "Australia", "Spain"];
+travelPlaces.push("Toronto");
+travelPlaces.push("New York");
+travelPlaces.push("Australia");
+travelPlaces.push("Spain");
 console.log(travelPlaces); //'Toronto', 'New York', 'Australia', 'Spain'
 
 
