@@ -17,7 +17,12 @@
  * then add a single line comment to show what is displayed in the terminal
  */
 
+var classroomSupplies = ["pen", "paper", "desk", "computer"];
 
+console.log(classroomSupplies); // 'pan', 'paper', 'desk', 'computer'
+
+classroomSupplies.sort();
+console.log(classroomSupplies); // 'computer', 'desk', 'paper', 'pen'
 
 
 
@@ -35,7 +40,9 @@
  */
 
 
-
+var travelPlaces = [];
+travelPlaces = ["Toronto", "New York", "Australia", "Spain"];
+console.log(travelPlaces); //'Toronto', 'New York', 'Australia', 'Spain'
 
 
 
@@ -51,7 +58,9 @@
  * Then console log out the baking recipies. Write a single line comment as to what will be displayed.
  */
 
-
+var bakingRecipies = ["brownies", "cookies", "cakes", "tarts"];
+bakingRecipies.pop();
+console.log(bakingRecipies); // 'brownies', 'cookies', 'cakeks', 'tarts'
 
 
 
@@ -75,8 +84,16 @@
  * 
  */
 
+var schedule = [
+    ["COMP 1170", "Fundamentals Frontend Web Tech", 3.0],
+    ["MDIA 1055", "Vector Graphics", 3.0],
+    ["MDIA 1106", "Design", 3.0],
+    ["MDIA 1620", "Basic Systems Operations and Prog", 3.0]
+];
 
+console.table(schedule);
 
+console.log(`I am taking %s, %s that is worth %s credits`, schedule[2][0], schedule[2][1], schedule[2][2].toFixed(1));
 
 
 
