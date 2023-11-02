@@ -3,100 +3,35 @@
  * 
  * always use camel case where needed
  * 
+ * Make sure to write the question/instruction and then the answers below
+ * 
  */
 
 /**
- * Question 1
- * 
- * initialise an empty array to the variable `classroom supplies`
- * Add the following items to the array in this order one by one base on the following positions:
- * pen, paper, desk, computer
- * console log out classroom supplies
- * then sort the array using .sort() method
- * then console log the array
- * then add a single line comment to show what is displayed in the terminal
+ * Question 5 - concat two different arrays by using .concat() method
+ * initial color list 1 and give the value  red, blud, green
+ *  initial color list 2 and give the value white and black
+ * initial color and combine the color list 1 and color list 2
+ * console log the result and wirte the result.
  */
-
-var classroomSupplies = ["pen", "paper", "desk", "computer"];
-
-console.log(classroomSupplies); // 'pan', 'paper', 'desk', 'computer'
-
-classroomSupplies.sort();
-console.log(classroomSupplies); // 'computer', 'desk', 'paper', 'pen'
-
-
-
+var colorList1 = ['red', 'blue', 'green'];
+var colorList2 = ['white', 'black'];
+var color = colorList1.concat(colorList2);
+console.log(color); // 'red', 'blue', 'green', 'white', 'black'
 
 
 
 /**
- * Question 2
+ * Question 6 - create a 2 dimensions array that is 2-by-4. Grab some values out of this array to create a sentence using concatenation.
+ * initial the 2 dimensions array, and put follow information
+ *  Hong Kong       China       Asia
+ *  Vancouver       Canada      North American
  * 
- * initialise an empty array to the variable `travel places`
- * Add the following items to the array one at a time:
- * Toronto, New York, Australia, Spain
- * console log out travel places
- * add a single line comment as to what the output will be
+ * console log the sentence like '__Hong Kong__ is in the __China__ and __China__ in the __Asia__'
  */
 
-
-var travelPlaces = [];
-travelPlaces = ["Toronto", "New York", "Australia", "Spain"];
-console.log(travelPlaces); //'Toronto', 'New York', 'Australia', 'Spain'
-
-
-
-
-
-
-/**
- * Question 3
- * 
- * initialise the variable called `baking recipies` to an array containing the values:
- * brownies, cookies, cakes, tarts
- * Then remove the last item in the array using the pop method.
- * Then console log out the baking recipies. Write a single line comment as to what will be displayed.
- */
-
-var bakingRecipies = ["brownies", "cookies", "cakes", "tarts"];
-bakingRecipies.pop();
-console.log(bakingRecipies); // 'brownies', 'cookies', 'cakeks', 'tarts'
-
-
-
-
-
-/**
- * Question 4
- * 
- * initialise the variable `schedule` to a 2-Dimensional array containing the values below:
- * 
- *          column[0]   column[1]                           column[2]
- * Row 1    COMP 1170   Fundamentals Frontend Web Tech      3.0
- * Row 2    MDIA 1055   Vector Graphics                     3.0
- * Row 3    MDIA 1106   Design                              3.0
- * Row 4    MDIA 1620   Basic Systems Operations and Prog   3.0
- * 
- * then use console.table() to showcase the information in a table.
- * 
- * Then based on the values stored in the schedule 2D array, console log out the following sentence (use backticks):
- * I am taking _MDIA 1106_, _Design_ that is worth _3.0_ credits
- * 
- */
-
-var schedule = [
-    ["COMP 1170", "Fundamentals Frontend Web Tech", 3.0],
-    ["MDIA 1055", "Vector Graphics", 3.0],
-    ["MDIA 1106", "Design", 3.0],
-    ["MDIA 1620", "Basic Systems Operations and Prog", 3.0]
+var city = [
+    ['Hong Kong', 'China', 'Asia'],
+    ['Vancouver', 'Canada', 'North American']
 ];
-
-console.table(schedule);
-
-console.log(`I am taking %s, %s that is worth %s credits`, schedule[2][0], schedule[2][1], schedule[2][2].toFixed(1));
-
-
-
-
-
-
+console.log(`%s is in the %s and %s in the %s`, city[0][0], city[0][1], city[0][1], city[0][2]); //Hong Kong is in the China and China in the Asia
